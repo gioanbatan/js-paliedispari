@@ -12,4 +12,23 @@
 // 2. Scriviamo sempre solo un pezzetto di codice alla volta, se funziona allora andiamo avanti.
 // Buon lavoro e buon divertimento! :faccia_leggermente_sorridente: :paperella:
 
-alert();
+// DATI
+// Scelta pari o dispari dell'utente
+// Numero fornito dall'utente
+// Numero random del computer
+
+// INPUT
+// L'utente selezione pari o dispari
+// l'utente inserisce un numero da 1 a 5
+
+// ELABORAZIONE
+// Viene calcolato il numero random del pc da 1 a 5
+// Viene sommato il numero dell'utente con quello del pc
+// SE la somma dei due numeri è un numero pari E l'utente ha deciso pari OPPURE la somma dei due numeri è un numero dispari E l'utente ha deciso dispari
+    // ALLORA il messaggio sarà "L'utente ha vinto"
+// ALTRIMENTI il messaggio sarà "Il computer ha vinto"
+
+// OUTPUT
+// Viene mostrato il messaggio
+
+// FUNZIONI
