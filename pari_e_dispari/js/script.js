@@ -14,8 +14,15 @@
 
 // DATI
 // Scelta pari o dispari dell'utente
+let userEvenOrOdd = parseInt(prompt("Inserire 1 per pari o 2 per dispari"));
+console.log("User 1=Even 2=Odd", userEvenOrOdd);
 // Numero fornito dall'utente
+const userNumber = parseInt(prompt("Inserire un numero da 1 a 5"));
+console.log("User Numb", userNumber);
+
 // Numero random del computer
+const computerNumber = rndNumb(1, 5);
+console.log("PC Numb", computerNumber);
 
 // INPUT
 // L'utente selezione pari o dispari
@@ -32,3 +39,6 @@
 // Viene mostrato il messaggio
 
 // FUNZIONI
+function rndNumb(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }

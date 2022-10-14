@@ -7,9 +7,9 @@
 
 html {
     font-size: 100%;
-    background-color: pink;
 }
 
+/* COMMON */
 .ms_container {
     position: relative;
     width: 100%;
