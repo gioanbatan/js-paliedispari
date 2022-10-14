@@ -19,18 +19,34 @@
 
 // INPUT
 // L'utente iserisce una parola
-const userWord = prompt("Inserisci una parola");
+// const userWord = prompt("Inserisci una parola");
+let userWord = document.getElementById("user-input").value;
+const sendBtn = document.querySelector(".ms_send");
+console.log("userWord", userWord, "get sendbtn", sendBtn);
+
+const result = document.getElementById("result");
 
 // ELABORAZIONE DATI
 // Viene chiamata la funzione che controlla se la parola è palindroma
 const userWordPalindrome = isPalindrome(userWord);
-console.log("palindrome?", userWordPalindrome);
+console.log("PAROLA", userWord, "RISULTATO", userWordPalindrome)
 
 // SE la funzione ritorna true, il messaggio di risposta conterrà la stringa "La parola è un palindromo"
 // ALTRIMENTI il messaggio di risposta conterrà "La parola non è un palindromo"
+let message = "";
 
-// OUTPUT
-// Viene Mostrato il messaggio
+// Pulsante invia
+sendBtn.addEventListener("click", function() {
+    // OUTPUT
+    // Viene Mostrato il messaggio
+    if (userWordPalindrome) {
+        result.innerHTML = `${userWord} è un palindromo.`;
+    } else {
+        result.innerHTML = `${userWord} non è un palindromo`;
+    }
+    console.log("palindrome?", userWordPalindrome);
+});
+
 
 // FUNZIONI
 /**
@@ -60,5 +76,5 @@ function isPalindrome(word) {
         wordIsPalindrome = true;
     }
 
-    return wordIsPalindrome;a
+    return wordIsPalindrome;
 }
