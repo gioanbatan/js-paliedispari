@@ -39,11 +39,17 @@ const finalNumb = sumTwoNumb(userNumber, computerNumber);
 console.log(finalNumb);
 
 // SE la somma dei due numeri è un numero pari E l'utente ha deciso pari OPPURE la somma dei due numeri è un numero dispari E l'utente ha deciso dispari
+if ((isEvenNumb(finalNumb) && userEvenOrOdd === 1) || (!isEvenNumb(finalNumb) && userEvenOrOdd === 2)) {
     // ALLORA il messaggio sarà "L'utente ha vinto"
-// ALTRIMENTI il messaggio sarà "Il computer ha vinto"
+    message = "L'utente ha vinto";
+} else {
+    // ALTRIMENTI il messaggio sarà "Il computer ha vinto"
+    message = "Il computer ha vinto";
+}
 
 // OUTPUT
 // Viene mostrato il messaggio
+console.log(message);
 
 // FUNZIONI
 
